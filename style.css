@@ -23,6 +23,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  margin: 10px;
 }
 
 h1 {
@@ -113,4 +114,51 @@ strong {
 
 footer{
   margin: 50px 0;
+}
+
+@media(max-width:600px){
+  body{
+    height: auto;
+  }
+
+  main { 
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.5rem;  
+  }  
+
+  #c{
+    margin-right: 20px;
+  }
+ 
+  input {
+    width: 55px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  button {   
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+section {
+  padding-left: 0px;
+}
+li {
+  font-size: 0.875rem;
+}
+
+img{
+  width: 70%;
+}
+
 }
