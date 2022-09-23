@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pythagoras Calculator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="furoDaFolha"></div>
+        <h1>Teorema de Pitágoras</h1>
+        <section class="formula-container">
+            <label>
+                <div id="c">c</div>² =
+                <input placeholder="a" type="number" id="a"></input>² +
+                <input placeholder="b" type="number" id="b"></input>²
+                <button id="button">Calcular</button>
+            </label>
+            <span class="info">clique em "a" e "b" e digite os números para calcular!</span>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    Pitágoras observou que ao desenhar um quadrado em cada lado do
+                    triangulo retângulo, a área dos menores somadas é igual a área do
+                    quadrado menor.
+                </li>
+                <li>
+                    Vale apenas para <strong>triângulos retângulos!</strong>
+                </li>
+                <li>
+                    Hipotenusa sempre o <strong>maior lado!</strong>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <img src="img/teorema.svg" alt="" />
+        </section>
+    </main>
+    <footer>Desenvolvido por @girapha</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
