@@ -39,7 +39,7 @@ function App() {
             </ul>
         </section>
         <section>
-            <img src="src/assets/teorema.svg" alt="" />
+            <img src="assets/teorema.svg" alt="" />
         </section>
     </main>
     <footer>Desenvolvido por @girapha</footer>
