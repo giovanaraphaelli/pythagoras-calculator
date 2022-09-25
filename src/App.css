@@ -53,10 +53,13 @@ h1 {
   flex-direction: column;
 }
 
-label {
+.wrapper-formula {
   font-size: 3rem;  
 }
 
+.info{
+  color: red;
+}
 #c{
   display: inline;
   margin-right: 30px;
@@ -70,6 +73,7 @@ input {
   font-size: 3rem;
   text-align: center;
   cursor: pointer;
+  transition: .3s;
 }
 
 input::placeholder {
@@ -86,6 +90,10 @@ input::-webkit-inner-spin-button {
 }
 input[type='number'] {
   -moz-appearance: textfield;
+}
+
+input:focus{
+  background-color: #dbbdff8e;
 }
 
 button {
@@ -132,7 +140,7 @@ footer{
     font-size: 2rem;
   }
 
-  label {
+  .wrapper-formula {
     font-size: 1.5rem;  
   }  
 

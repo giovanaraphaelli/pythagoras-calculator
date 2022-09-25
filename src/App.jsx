@@ -2,12 +2,20 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [a, setA] = useState(0);
-  const [b, setB] = useState(0);
+  const [a, setA] = useState(null);
+  const [b, setB] = useState(null);
   const [c, setC] = useState("c");
+  const[erro, setErro] = useState(false);
+
+
 
   function calculaC() {
+   if(a & b){
     setC(Math.round(Math.sqrt((a * a) +( b * b)))); 
+    setErro(false)
+   }else{
+      setErro(true)
+   }
   }
   return (
     <>
@@ -15,13 +23,13 @@ function App() {
         <div className="furoDaFolha"></div>
         <h1>Teorema de Pitágoras</h1>
         <section className="formula-container">
-            <label>
+            <div className='wrapper-formula'>
                 <div id="c">{c}</div>² =
                 <input placeholder="a" type="number" onChange={e => setA(e.target.value)} ></input>² +
                 <input placeholder="b" type="number" onChange={e => setB(e.target.value)}></input>²
                 <button onClick={calculaC}>Calcular</button>
-            </label>
-            <span className="info">clique em "a" e "b" e digite os números para calcular!</span>
+            </div>
+            <span className="info">{erro ? 'clique nas variáveis "a" e "b" e preencha os campos para calcular!' : ""}</span>
         </section>
         <section>
             <ul>
