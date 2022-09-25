@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [a, setA] = useState("a");
-  const [b, setB] = useState("b");
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
   const [c, setC] = useState("c");
 
   function calculaC() {
@@ -38,11 +38,11 @@ function App() {
                 </li>
             </ul>
         </section>
-        <section>
-            <img src="teorema.svg" alt="" />
-        </section>
+        <figure>
+            <img src="teorema.svg" alt="Triangulo retângulo com anotação sobre hipotenusa e catetos" />
+        </figure>
     </main>
-    <footer>Desenvolvido por @girapha</footer>
+    <footer>Desenvolvido por <a href="https://giovanaraphaelli.vercel.app/" target="_blank" rel="noopener noreferrer">@girapha</a></footer>
     </>
   );
 }
