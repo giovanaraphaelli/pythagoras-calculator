@@ -8,7 +8,7 @@ function App() {
   const [erro, setErro] = useState(false);
 
   function calculaC() {
-    if (a & b) {
+    if (a && b) {
       setC(Math.round(Math.sqrt(a * a + b * b)));
       setErro(false);
     } else {
